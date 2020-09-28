@@ -12,9 +12,7 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    /* color: #333333; */
     float: left;
-    /* text-decoration-color: #333333; */
     text-decoration: none;
     font-size: 1vw;
     text-align: left;
@@ -53,7 +51,6 @@ h1 {
 }
 
 h2 {
-    /* align: center; */
     font-size: 4vw;
     margin-block-start: 0.50em;
     margin-block-end: 0.30em;
@@ -75,7 +72,6 @@ h6 {
 
 nav {
     padding: 1vw;
-    /* background-color: white; */
     position: sticky;
     top: 0;
     width: 100%;
@@ -101,8 +97,6 @@ p {
 
 .navigationbar input[type=text] {
     float: right;
-    /* padding: 6px; */
-    /* margin-top: 1vw; */
     margin-right: 5vw;
     border: none;
     font-size: 1vw;
@@ -128,17 +122,11 @@ ol {
     width: 50%;
 }
 
-
-/* .image {
-    width: 100%;
-    height: auto;
-    opacity: 100;
-} */
-
 .section-name {
     text-align: center;
     display: flex;
     align-items: center;
+    margin-top: 7vw;
     margin-bottom: 8vw;
     margin-left: 7vw;
 }
@@ -386,7 +374,7 @@ ol {
     }
     .text {
         position: absolute;
-        top: 10px;
+        top: 5vh;
         left: 30px;
         color: rgb(17, 17, 18);
     }
@@ -407,5 +395,15 @@ ol {
         bottom: 0;
         left: 0;
         z-index: -5;
+    }
+    .paragraph {
+        font: 2vw;
+        white-space: wrap;
+        line-height: 1.5;
+        margin-bottom: 3vw;
+    }
+    h6 {
+        font-size: 2vh;
+        color: #366EFF;
     }
 }
