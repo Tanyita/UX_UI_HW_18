@@ -7,7 +7,7 @@ body {
 }
 
 .navigation {
-    padding: 1vw;
+    /* padding: 1vw; */
     background-color: white;
     position: sticky;
     top: 0;
@@ -216,25 +216,15 @@ ol {
     margin-left: 10vw;
 }
 
-.footer {
-    background-image: url("../images/footer3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: 100% 100%;
-    /* Make sure it's alwayes on top so hver works. */
-    z-index: 999;
-}
-
 #footer-muse {
     top: 10vw;
-    left: 10vw;
+    left: 15vw;
     position: relative;
     height: 20vw;
     /* margin: 0 auto; */
     /* background-position: 23% 100%; */
     /* margin-left: 7vw; */
-    margin: 7vw;
+    /* margin: 7vw; */
     padding: 2vw 7vw;
     background-repeat: no-repeat;
     background-size: contain;
@@ -249,48 +239,40 @@ ol {
 
 @keyframes footerMuseAnimation {
     0%,
-    33% {
-        background-image: url(../images/atina1.png);
+    20% {
+        background-image: url(../images/atina10.png);
     }
-    34%,
-    66% {
-        background-image: url(../images/atinagum.png);
+    21%,
+    40% {
+        background-image: url(../images/atina11.png)
     }
-    67%,
+    41%,
+    60% {
+        background-image: url(../images/atina12.png);
+    }
+    61%,
+    80% {
+        background-image: url(../images/atina13.png);
+    }
+    81%,
     99% {
-        background-image: url(../images/atinagumpop.png);
+        background-image: url(../images/atina14.png);
     }
 }
 
-
-/* #footer-items {
-    float: right;
-    position: relative;
-    margin-left: 25vw;
-    font-size: 1.75vw;
-    cursor: pointer;
-     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3; 
-    padding: 1.25vw;
-    text-decoration: none;
-} */
-
-
-/* .columns:hover {
-    font-weight: bolder;
-} */
-
 .columns {
     position: relative;
-    margin-left: 35vw;
-    width: 55vw;
+    /* margin-right: 25vw; */
+    margin-left: 25vw;
+    width: 60vw;
     padding: 1.25vw;
+    font-size: 1.25vw;
 }
 
 .line {
     position: relative;
     margin-left: 35vw;
-    width: 55vw;
+    width: 50vw;
     padding: 1.25vw;
 }
 
@@ -303,9 +285,52 @@ ol {
     padding: 1.25vw;
 }
 
+.email:hover {
+    font-weight: bolder;
+}
+
 #footer-content {
     position: relative;
-    bottom: 10vw;
+    margin-right: 5vw;
+    /* float: right; */
+    bottom: 8vw;
+    /* align-content: flex-end; */
+}
+
+
+/* .footerall {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} */
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+    /* color: white;
+        text-align: center; */
+    /* background-image: url("../images/footer3.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    background-size: 100% 100%;
+    /* z-index: -1; */
+    /* bottom: 0;
+    position: absolute; */
+}
+
+#pink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: -1;
 }
 
 #myBtn {
@@ -322,6 +347,7 @@ ol {
     cursor: pointer;
     padding: 1vw 2vw;
     border-radius: 9px;
+    /* margin-right: 2vw; */
 }
 
 #myBtn:hover {
