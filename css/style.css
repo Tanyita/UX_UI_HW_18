@@ -7,23 +7,23 @@ body {
 }
 
 .navigation {
-    color: #333333;
+    padding: 1vw;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /* color: #333333; */
     float: left;
-    text-decoration-color: #333333;
+    /* text-decoration-color: #333333; */
     text-decoration: none;
     font-size: 1vw;
+    text-align: left;
 }
 
-
-/* #search {
-    float: right;
-} */
-
-
-}
 .nav .icon {
     display: none;
 }
+
 .heroimage {
     width: 100%;
     height: auto;
@@ -31,47 +31,66 @@ body {
     position: relative;
     z-index: -2;
 }
+
+.nika {
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    position: relative;
+    z-index: -1;
+}
+
 .text {
     position: absolute;
-    top: 4vw;
-    left: 7vw;
-    color: rgb(17, 17, 18);
+    top: 6vw;
+    left: 6.5vw;
+    color: rgb(28, 28, 33);
 }
+
 h1 {
-    font-size: 7vw;
+    font-size: 6.25vw;
+    margin-block-end: 0.73em;
 }
+
 h2 {
     /* align: center; */
-    
     font-size: 4vw;
     margin-block-start: 0.50em;
     margin-block-end: 0.30em;
 }
+
 h3 {
-    font-size: 4vw;
+    font-size: 3.57vw;
 }
+
 h5 {
     font-size: 1vw;
     color: #366EFF;
 }
+
 h6 {
     font-size: 1vw;
     color: #366EFF;
 }
+
 nav {
     padding: 1vw;
-    background-color: white;
+    /* background-color: white; */
     position: sticky;
     top: 0;
     width: 100%;
 }
+
 a {
     margin-left: 4vw;
     color: #333333;
+    text-decoration: none;
 }
+
 a:hover {
     font-weight: bold;
 }
+
 p {
     font-size: 1vw;
     margin-block-start: 0.5em;
@@ -80,12 +99,42 @@ p {
     margin-inline-end: 0px;
 }
 
-/* Classes and document elements  */
-.image {
+.navigationbar input[type=text] {
+    float: right;
+    /* padding: 6px; */
+    /* margin-top: 1vw; */
+    margin-right: 5vw;
+    border: none;
+    font-size: 1vw;
+    text-decoration-color: #333333;
+}
+
+input {
+    font: 400 13.3333px Montserrat;
+}
+
+.navigationbar {
+    align-items: center;
+}
+
+ol {
+    margin-left: 4vw;
+}
+
+.sculpture {
+    position: absolute;
+    top: 10vw;
+    right: 2vw;
+    width: 50%;
+}
+
+
+/* .image {
     width: 100%;
     height: auto;
     opacity: 100;
-}
+} */
+
 .section-name {
     text-align: center;
     display: flex;
@@ -93,11 +142,13 @@ p {
     margin-bottom: 8vw;
     margin-left: 7vw;
 }
+
 .WaveImage {
     width: 50%;
     float: right;
     display: flex;
 }
+
 .button {
     background-color: #366EFF;
     border-radius: 1vw;
@@ -112,9 +163,11 @@ p {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
+
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 .grid-container {
     display: grid;
     grid-template-areas: "grid-item1" "grid-item2" "grid-item3" "grid-item4";
@@ -126,32 +179,20 @@ p {
     justify-content: flex-start;
     /* grid-gap: 10px;
     padding: 10px; */
-    
     margin-bottom: 10vw;
     vertical-align: middle;
     margin-left: 7vw;
     margin-right: 5vw;
 }
+
 .responsive {
     width: 100%;
     height: auto;
     opacity: 100;
     /* top: -40vw; */
-    
     z-index: -1;
 }
-.backgroundimage {
-    width: 100%;
-    height: auto;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.container {
-    position: relative;
-}
+
 #aboutme {
     display: grid;
     grid-template-columns: 40% auto;
@@ -163,65 +204,96 @@ p {
     margin-left: 7vw;
     margin-right: 5vw;
 }
+
 .paragraph {
     font: 5vw;
     white-space: wrap;
     line-height: 1.8;
     margin-bottom: 3vw;
 }
+
 .right {
     margin-left: 10vw;
 }
+
 .footer {
     background-image: url("../images/footer3.png");
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     background-size: 100% 100%;
-    z-index: -1;
+    /* Make sure it's alwayes on top so hver works. */
+    z-index: 999;
 }
-.footer-muse {
-    top: 3vw;
-    width: 17vw;
-    margin-left: 12vw;
+
+#footer-muse {
+    top: 10vw;
+    left: 10vw;
     position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    height: 20vw;
+    /* margin: 0 auto; */
+    /* background-position: 23% 100%; */
+    /* margin-left: 7vw; */
+    margin: 7vw;
+    padding: 2vw 7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: footerMuseAnimation infinite 1.3s;
+    animation-play-state: paused;
+    display: inline-block;
 }
-@keyframes example {
-    0% {
-        background-image: url("../images/atina2.png");
+
+#footer-muse:hover {
+    animation-play-state: running;
+}
+
+@keyframes footerMuseAnimation {
+    0%,
+    33% {
+        background-image: url(../images/atina1.png);
     }
-    
-    25% {
-        background-image: url("../images/atinagum.png");
+    34%,
+    66% {
+        background-image: url(../images/atinagum.png);
     }
-    
-    50% {
-        background-color: url("../images/atinagumpop.png");
+    67%,
+    99% {
+        background-image: url(../images/atinagumpop.png);
     }
 }
-.columns {
-    word-spacing: 2vw;
+
+
+/* #footer-items {
+    float: right;
     position: relative;
-    margin-left: 35vw;
+    margin-left: 25vw;
     font-size: 1.75vw;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+     -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3; 
+    padding: 1.25vw;
+    text-decoration: none;
+} */
+
+
+/* .columns:hover {
+    font-weight: bolder;
+} */
+
+.columns {
+    position: relative;
+    margin-left: 35vw;
+    width: 55vw;
     padding: 1.25vw;
 }
-.columns:hover {
-    font-weight: bold;
-}
+
 .line {
     position: relative;
     margin-left: 35vw;
-    width: 53vw;
+    width: 55vw;
     padding: 1.25vw;
 }
+
 .email {
     text-align: left;
     position: relative;
@@ -230,10 +302,12 @@ p {
     font-size: 1.25vw;
     padding: 1.25vw;
 }
+
 #footer-content {
     position: relative;
     bottom: 10vw;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -249,18 +323,18 @@ p {
     padding: 1vw 2vw;
     border-radius: 9px;
 }
+
 #myBtn:hover {
     background-color: #555;
 }
+
 @media screen and (max-width: 700px) {
     #box {
         width: 50%;
     }
-    
     .grid_item {
         width: 50%;
     }
-    
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -268,7 +342,6 @@ p {
         align-items: center;
         margin-right: 10vw;
     }
-    
     .heroimage {
         width: 100%;
         height: auto;
@@ -276,25 +349,21 @@ p {
         position: relative;
         z-index: -2;
     }
-    
     .image {
         width: 100%;
         height: auto;
         opacity: 100;
     }
-    
     .responsive {
         width: 100%;
         height: auto;
     }
-    
     .text {
         position: absolute;
         top: 10px;
         left: 30px;
         color: rgb(17, 17, 18);
     }
-    
     #aboutme {
         display: grid;
         grid-template-columns: auto;
@@ -305,7 +374,6 @@ p {
         margin-left: 7vw;
         margin-right: 5vw;
     }
-    
     .container {
         width: 100%;
         height: auto;

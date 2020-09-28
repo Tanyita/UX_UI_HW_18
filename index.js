@@ -1,6 +1,5 @@
 mybutton = document.getElementById("myBtn");
 
-
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
@@ -11,40 +10,16 @@ function scrollFunction() {
     }
 }
 
-
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
 
-// function myFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "topnav") {
-//         x.className += " responsive";
-//     } else {
-//         x.className = "topnav";
-//     }
-// }
 
-
-
-
-
-
-
-
-function footer - muse() {
-    var a;
-    a = document.getElementsByClassName("footer-muse");
-    a.innerHTML = "footer-muse";
-    setTimeout(function() {
-        a.innerHTML = "&#xf256;";
-    }, 500);
-    setTimeout(function() {
-        a.innerHTML = "&#xf259;";
-    }, 1000);
-    setTimeout(function() {
-        a.innerHTML = "&#xf256;";
-    }, 1500);
-}
+// $document.ready(function() {
+//     $("#footer-muse").click(function() {
+//         $("#footer-muse img.").toggleClass("transparent");
+//         // animation-play-state: paused;
+//     });
+// });
